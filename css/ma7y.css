@@ -203,24 +203,6 @@ header .container a:hover::before{
         display: none;
     }
 }
-@media (max-width:767px){
-    .mega-menu .first-menu ,
-    .mega-menu .second-menu{
-        max-width: 100%;
-    }
-    .mega-menu{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: 750px;
-    }
-    .mega-menu .first-menu{
-        margin-bottom: 240px;
-    }
-    .mega-menu .menu li{
-        margin-bottom: 20px ;
-    }
-}
 .mega:hover .mega-menu{
     z-index: -5;
     position: absolute;
@@ -286,6 +268,14 @@ header .container a:hover::before{
 .mega-menu .second-menu .menu i{
     margin-right: 20px;
 }
+@media (max-width:767px){
+    .mega-menu{
+        display: none;
+    }
+    .mega{
+        display: none;
+    }
+}
 /* end-mega-menu */
     /* start-landing */
 .landing{
@@ -334,7 +324,6 @@ header .container a:hover::before{
         text-align: center;
         line-height: 2;
         margin: auto;
-        margin-bottom: 245px;
     }
 }
 .landing .container .text h2{
